@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BMIApp</string>
+    <string name="massET">Mass:</string>
+    <string name="massHintKg">80kg</string>
+    <string name="massHintPn">180pounds</string>
+    <string name="heightHintM">1.80m</string>
+    <string name="heightHintF">6.00ft</string>
+    <string name="heightET">Height:</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi">BMI:</string>
+    <string name="kgM">m/kg</string>
+    <string name="pnF">ft/ps</string>
+    <string name="invalidInput">Invalid Input</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="name">MICHAŁ KURPIŃSKI</string>
+    <string name="github">mKurpinski</string>
+    <string name="decription">Second year student of Computer Science. Interested in programming and new technologies</string>
+
+</resources>

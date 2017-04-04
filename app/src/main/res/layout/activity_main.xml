@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pl.edu.pwr.swim.kurpinski.bmiapp.MainActivity">
+
+    <include layout="@layout/toolbar"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/spinnerItems"
+        android:id="@+id/spinnerMeasure"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_below="@id/spinnerMeasure"
+        android:text="@string/massET"
+        android:layout_width="60dp"
+        android:textColor="#0e0e0e"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:id="@+id/massTV"/>
+    <EditText
+        android:layout_below="@id/spinnerMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:width="1000dp"
+        android:hint="@string/massHintKg"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/massTV"
+        android:id="@+id/massET"/>
+    <TextView
+        android:layout_below="@id/massTV"
+        android:textColor="#0e0e0e"
+        android:text="@string/heightET"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:id="@+id/heightTV" />
+    <EditText
+        android:hint="@string/heightHintM"
+        android:layout_below="@id/massET"
+        android:layout_width="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_height="45dp"
+        android:width="1000dp"
+        android:layout_toRightOf="@id/heightTV"
+        android:id="@+id/heightET"
+        />
+    <Button
+        android:text="@string/calculate"
+        android:layout_width="match_parent"
+        android:layout_below="@id/heightET"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmB"
+        />
+    <TextView
+        android:text="@string/bmi"
+        android:textColor="#0e0e0e"
+        android:paddingTop="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/bmiTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmB"/>
+    <TextView
+        android:paddingTop="70dp"
+        android:id="@+id/resultTV"
+        android:textSize="100dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bmiTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</ScrollView>
